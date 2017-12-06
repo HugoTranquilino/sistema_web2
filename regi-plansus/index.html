@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<?php
+    include 'seguridad.php';
+    ?>
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default custom-header">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button><a class="navbar-brand navbar-link" href="#"><img src=""> Gimnasio <span> Spartacus</span> </a></div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav links">
+                    <li role="presentation"><a href="http://localhost/sistema-gimnasio/registrar/">Clientes </a>
+                    
+                     <ul>
+                        <li role="presentation"><a href="http://localhost/sistema-gimnasio/registrar/">Nuevo Cliente </a>
+                        <li role="presentation"><a href="http://localhost/sistema-gimnasio/muestra_clientes/">Lista de Clientes </a>
+                        </ul>
+                    </li>
+                     <li role="presentation"><a href="#">Suscripciones </a>
+                                        <ul>
+                        <li role="presentation"><a href="http://localhost/sistema-gimnasio/suscripcion/Tipo%20de%20Suscripciones.html">Tipos de Suscripciones</a>
+                        
+                        </ul>
+                    
+                    </li>
+                    
+                    <li role="presentation"><a href="#">Pagos </a>
+                     <ul>
+                        <li role="presentation"><a href="#">Lista de Pagos </a>
+                        <li role="presentation"><a href="#">Registro de Pagos </a>
+                        </ul>
+                    
+                    </li>
+                    <li role="presentation"><a href="#">Administradores </a>
+                    <ul>
+                        <li role="presentation"><a href="http://localhost/sistema-gimnasio/eliminar2/lista.php">Lista de Administradores </a>
+                        <li role="presentation"><a href="http://localhost/sistema-gimnasio/reg-admin/">Nuevo Administrador </a>
+                        </ul>
+                    
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"> <span class="caret"></span><img src="assets/img/avatar.jpg" class="dropdown-image"></a>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <!--<li><a href="#">Settings </a></li>
+                            <li><a href="#">Payments </a></li> -->
+                            <li class="active"><a href="http://localhost/proyectoSpartacus/">Cerrar Sesión </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--esta parte contiene el formulario que va a recibir los datos que le estemos dando a nuestra db-->
+    <div class="row register-form">
+        <div class="col-md-8 col-md-offset-2">
+            <form action="registrar_sus.php" method="post" class="form-horizontal custom-form">
+                <h1>Registro para nuevos planes de suscripción</h1>
+                <div class="form-group">
+                    
+                    <!--formulario para registro de un nuevo plan de suscripción-->
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="name-input-field">Nombre de Suscripción</label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="text" placeholder="Nombre Promoción" name="tipo_sus" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="name-input-field">Precio de Suscripción</label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="number" placeholder="$MX" name="prec_sus" required>
+                    </div>
+                </div>
+                
+                <button class="btn btn-default submit-button" type="submit">Registrar </button>
+                <!--<button class="btn btn-default submit-button" type="button">Registrar </button> -->
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

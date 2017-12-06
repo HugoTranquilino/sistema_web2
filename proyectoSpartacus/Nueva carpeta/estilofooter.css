@@ -1,0 +1,113 @@
+.footer-bottom {
+    padding: 40px 0 30px;
+    border-top: 1px solid #666;
+    background: #1e1e1e;
+}
+.copyright-text p {
+    color: #ccc;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+.social-link li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.social-link li a {
+    color: #ccc;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    transition: .5s;
+}
+
+
+
+
+#principal{
+    background-color: #ffffff;
+    display: block;
+    
+}
+figure{
+    margin: 60px;
+    margin-right:20px;
+    padding:0;
+    display:inline-block;
+    position: relative;
+}
+#servicios2{
+    background-color: #000000;
+
+    
+}
+.serv2 figure{
+    margin: 70px;
+    padding:0;
+    display:inline-block;
+    position: relative;
+}
+#textoservicios{
+    color: red;
+    font-size: 26px;
+    font-style: normal;
+    font-family:sans-serif;
+    text-align: center;
+   
+    
+}
+.templatemo-contact-map {
+    margin-bottom: 15px;
+    height: 378px;
+
+}
+/*FORM CONTACTO*/
+
+#contacto{
+    background:  black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contac table{
+ border: black 5px solid;
+ background:  #221d1e;
+ padding: 20px;
+}
+.contac label{
+   font-family: 'Days One', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    color: #F4D913;
+}
+.contac input{
+    width: 260px;
+    height: 25px;
+    border: 0px;
+    background: rgba(120, 103, 103  ,.8)
+}
+textarea{
+    border: 0px;
+    background: rgba(120, 103, 103  ,.8) 
+}
+ #btnenviar{
+     margin-top: 10px;
+     padding: 10px;
+    height: 35px;
+    background: orange;
+    border: black 2px solid;
+    font-family: 'Days One', sans-serif;
+     font-size: 15px;
+}
+#btnenviar:hover input{
+    display: block;
+    background: black;
+}

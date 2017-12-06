@@ -1,0 +1,158 @@
+#misiones{
+    margin-top: -35;
+    margin-bottom: -20;
+    background: #221d1e;
+   
+}
+.institucional p{
+    margin-left: 30px;
+    background: #221d1e;
+    text-align: justify;
+    color: #FFFFFF;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 20px;
+    
+}
+.institucional li{
+    text-align: justify;
+    color: #FFFFFF;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.institucional h3{
+    margin-top: 35px;
+    font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align:center;
+    color:#F4D913;
+    
+}
+
+/**/
+/*Donde encontrarnos stylos*/
+
+#mapa{
+    width: 100%;
+    height: 650px;
+    background: #221d1e;
+    /*border: 1px solid black;*/
+}
+#mapagoogle{
+    background: #221d1e;
+    width: 50%;
+    height: 650px;
+    /*border: 1px solid blue;*/
+    float: left;
+    
+}
+#mapagoogle h3{
+    margin-top: 15px;
+    font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align:center;
+    color:#F4D913;
+}
+#mapagoogle iframe{
+    margin-top: 20px;
+}
+#ubicacion{
+    background: #221d1e;
+    width: 50%;
+    height: 650px;
+    /*border: 1px solid green;*/
+    float: left;
+}
+.orimap h3{
+    margin-top: 15px;
+    font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align:center;
+    color:#F4D913;
+    
+}
+.orimap li{
+    text-align: left;
+    color: #F4D913;
+    font-family: 'Days One', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.orimap span{
+    text-align: justify;
+    color: #FFFFFF;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 20px;
+    margin-left: 30px;
+    
+}
+.orimap figure{
+    margin-top: 2px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding:0;
+    display:inline-block;
+    position: relative;
+}
+
+/*como empezar*/
+
+
+#empezar{
+    background: #221d1e;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.emp1 p{
+    text-align: justify;
+    color: #FFFFFF;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 20px;
+  
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.emp1 h3{
+    margin-top: 15px;
+    font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align:center;
+    color:#F4D913;
+    
+}
+.emp1 li{
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    text-align: left;
+    color: #F4D913;
+    font-family: 'Days One', sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.emp1 span{
+    text-align:justify;
+    color: #FFFFFF;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 20px;
+    margin-left: 30px;
+    
+}
+.emp1 figure{
+    margin-top: 2px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding:0;
+    display:inline-block;
+    position: relative;
+}
+

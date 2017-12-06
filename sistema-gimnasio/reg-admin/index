@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/css/user.css">
+</head>
+
+<body>
+    <?php
+    include 'conexion.php';
+
+    #INSERT INTO `cliente` (`id_cliente`, `nombre`, `apellido_p`, `apellido_m`, `tel`) VALUES ('14500689', 'Jose', 'Hernandez', 'Mar', '7850982312');
+    
+    #este es del registro
+    #$inserta ="INSERT INTO clientes";
+    if(isset($_POST['id_cliente']) && !empty($_POST['id_cliente']) && isset($_POST['nombre']) && !empty($_POST['nombre']) && isset($_POST['ap_pat']) && !empty($_POST['ap_pat']) && isset($_POST['ap_mat']) && !empty($_POST['ap_mat']) && isset($_POST['tel']) !empty($_POST['tel'])){
+
+        $conexion = mysql_connect($servidor, $usuario, "") or die ("Problemas al conectar");
+        mysql_select_db($conexion, $basededatos) or die("problemas al seleccionar");
+        mysql_query($conexion, "INSERT INTO cliente(id_cliente,nombre,apellido_p,apellido_m,tel) VALUES('$_POST[id_cliente]' , '$_POST[nombre]' ,'$_POST[ap_pat]' , '$_POST[ap_mat]' , '$_POST[tel]')");
+        echo "datos insertados";
+    }else {
+        echo "no se guardaron datos";
+    }
+
+    
+
+    #echo "datos insertados";
+/*  es la consulta a la tabla de clientes
+    $consulta = "SELECT * FROM cliente";
+	$resultado = mysqli_query( $conexion, $consulta) or die ( "Algo ha ido mal en la consulta a la base de datos");
+*/
+
+    // Motrar el resultado de los registro de la base de datos
+	// Encabezado de la tabla
+    
+    ?>
+    <nav class="navbar navbar-default custom-header">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a class="navbar-brand navbar-link" href="#">Gimnasio <span>Spartacus </span> </a></div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav links">
+                    <li role="presentation"><a href="#">Clientes </a></li>
+                    <li role="presentation"><a href="#">Contactanos </a></li>
+                    <!--
+                    <li role="presentation"><a href="#"> Reports</a></li>
+                    <li role="presentation"><a href="#" class="custom-navbar"> Roles<span class="badge">new</span></a></li>
+-->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"> <span class="caret"></span><img src="assets/img/avatar.jpg" class="dropdown-image"></a>
+                        <!--menu para los usuarios-->
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                           <!-- <li><a href="#"> </a></li>
+                            
+                            <li><a href="#">Payments </a></li>-->
+                            <li class="active"><a href="#">Cerrar Sesión </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row register-form" >
+        <div class="col-md-8 col-md-offset-2">
+            <form class="form-horizontal custom-form">
+                <h1>Registro de Clientes</h1>
+                <div class="form-group">
+                    
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="name-input-field">Id del Cliente </label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="number" id="id_cliente" name="id_cliente" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="name-input-field">Nombre </label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="text" id="nombre" name="nombre" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="name-input-field">Apellido Paterno</label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="text" id="ap_pat" name="ap_pat" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="name-input-field">Apellido Materno</label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="text" id="ap_mat" name="ap_mat" required>
+                    </div>
+                </div>
+                    <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="email-input-field">Teléfono </label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="number" id="tel" name="tel" required>
+                    </div>
+                </div>
+                </div>
+                
+                <button class="btn btn-default submit-button" type="submit">Registrar </button>
+                <!--<button class="btn btn-default submit-button" type="button">Registrar </button> -->
+            </form>
+        </div>
+
+
+
+
+
+    <!--<span class="label label-default"><strong>Clientes </strong></span>-->
+
+    <!---
+    <h1>Lista de Clientes</h1>
+    <div class="row register-form">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table" id="tab_client">
+                    <thead>
+                        <tr class="titulos">
+                            <th>Id Cliente</th>
+                            <th>Nombre </th>
+                            <th>Primer Apellido</th>
+                            <th>Segundo Apellido</th>
+                            <th>Teléfono </th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <?php
+                        // Bucle while que recorre cada registro y muestra cada campo en la tabla.
+#	while ($columna = mysqli_fetch_array( $resultado ))
+	{
+#		echo "<tr>";
+        #echo "<td>" . $columna['id_cliente'] . "</td><td>" . $columna[ 'nombre'] . "</td>";
+#		echo "<td>" . $columna['id_cliente'] . "</td><td>" . $columna[ 'nombre'] . "</td><td> " . $columna['apellido_p'] . "</td><td>" . $columna['apellido_m'] . "</td><td>" . $columna['tel'] ."</td>";
+#		echo "</tr>";
+	}
+ #                       mysqli_close( $conexion );
+                        ?>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    -->
+
+    <button class="btn btn-default" type="button">Editar</button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

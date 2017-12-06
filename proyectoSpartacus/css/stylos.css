@@ -1,0 +1,282 @@
+@font-face {
+font-family: "The Blacklist";
+src: url('fuentes/The-Blacklist.ttf');
+}
+
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0;
+   
+}
+ 
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+  margin-bottom: 20px;
+}
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+ 
+nav ul li:hover {
+  background: #337fb7;
+}
+
+/*estilos footer*/
+/*footer{
+    position: relative;
+    margin-top: -10px;
+    width: 100%;
+    padding: 50px;
+    clear: both;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    */
+}
+/*INICIO CUERPO DE SERVICIOS*/
+
+#colormedio {
+    background: #221d1e;
+}
+
+footer{
+    width: 100%;
+    float: left;
+    clear: both;
+    box-shadow: 0px 2px 2px #000;
+    background: #610B0B;
+}
+footer section{
+    width: 440px;
+    float: left;
+    padding: 20px;
+    background-color:  black;
+    
+}
+footer #acerca-de {
+    font-family: Verdana;
+    font-size: 12px;
+    color:white;
+    text-align: justify;
+    line-height: 20px;
+    
+}
+footer #acerca-de h3{
+    font-family:sourcesans-light;
+    font-size: 20px;
+    color: rebeccapurple;
+    margin-bottom: 5px;
+    
+}
+
+footer #redes-s >div{
+    width: 220px;
+    height: 80px;
+    float:inherit;
+    opacity: .7;
+    
+    
+}
+footer #redes-s > div a{
+    width: 220px;
+    height: 80px;
+    display:inline-block;
+}
+footer #redes-s .email{
+    background: url(../iconos/correo.png);
+    background:cover;
+     margin-bottom: 10px;
+  
+}
+footer #redes-s .facebook{
+    background: url(../iconos/facebook.png);
+      margin-bottom: 10px;
+}
+footer #redes-s .instagram{
+    background: url(../iconos/instagram.png);
+}
+footer #redes-s .mapas{
+    background: url(../iconos/mapas.png);
+}
+footer #redes-s >div:hover{
+    opacity: 1;
+}
+
+/*footer*/
+.footer-bottom {
+    padding: 40px 0 30px;
+    background: #221d1e;
+     /*background: rgba(43, 42, 42  ,.8);*/
+}
+.copyright-text p {
+    color: #ccc;
+    margin-top: 12px;
+    margin-bottom: 0;
+    
+}
+.social-link li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.social-link li a {
+    color: #ccc;
+    
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+   
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    transition: .5s;
+}
+/*estilo imagenes 3*/
+#principali{
+    margin-top: -20;
+    background-color: #221d1e;
+    
+}
+.algo figure{
+    margin: 60px;
+    margin-right:20px;
+    padding:0;
+    display:inline-block;
+    position: relative;
+}
+.algo figcaption{
+    display: none;
+    background: rgba(222, 9, 9  ,0.7);
+    position: absolute;
+    font-family: 'PT Serif Caption', serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 3%;
+    
+}
+figure:hover figcaption{
+    display: block;
+}
+#textoservicios{
+    margin-bottom: 30px;
+    font-family: "Lobster";
+    color: #f2f2f2;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;     
+}
+#servicios2{
+    background-color: #221d1e;
+     margin-top: -50;
+    
+}
+.serv2 figure{
+ 
+    margin: 70px;
+    padding:0;
+    display:inline-block;
+    position: relative;
+}
+/**/
+#acerca{
+ font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #F4D913;
+}
+#acercatexto{
+  font-family: 'PT Serif Caption', serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: justify;
+  
+}
+#copy{
+    text-align: center;
+    color:#FFFFFF ;
+  
+}
+#redes{
+   font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align:right;
+    color:#F4D913;
+    /*color: #B40404;*/
+}
+/*fin del footer*/
+/*FORM CONTACTO*/
+
+#contacto{
+    margin-top: 70px;
+    margin-left: 100px;
+    width: auto;
+    height: auto;
+    display: flex;
+    text-align: right;
+}
+.contac table{
+ background:  #221d1e;
+ padding: 20px;
+ 
+}
+.contac label{
+   font-family: 'Days One', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    color: #F4D913;
+}
+.contac input{
+    width: 260px;
+    height: 25px;
+    border: 0px;
+    background: rgba(120, 103, 103  ,.8)
+}
+.contac h3{
+    font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color:#F4D913;
+    text-align: left;
+}
+textarea{
+    border: 0px;
+    background: rgba(120, 103, 103  ,.8) 
+}
+ #btnenviar{
+     margin-top: 10px;
+     padding: 10px;
+    height: 35px;
+    background: orange;
+    border: black 2px solid;
+    font-family: 'Days One', sans-serif;
+     font-size: 15px;
+}

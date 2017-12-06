@@ -61,19 +61,19 @@
             </div>
         </div>
     </nav>
-    
-    <!--.formulario para registrar los datos.-->
-    <div class="row register-form">
+  <!--formulario actualizado para el registro de clientes al sistema-->  
+ <div class="row register-form">
         <div class="col-md-8 col-md-offset-2">
-            <form action="registrar_adm.php" method="post" class="form-horizontal custom-form">
-                <h1>Registro de Administradores</h1>
+            <form action="registrar_c.php" method="post" class="form-horizontal custom-form">
+                <h1>Registro de Clientes</h1>
                 <div class="form-group">
+                    
                 <div class="form-group">
                     <div class="col-sm-4 label-column">
-                        <label class="control-label" for="name-input-field">Id del Administrador </label>
+                        <label class="control-label" for="name-input-field">Id del Cliente </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="number" name="id_admin" required>
+                        <input class="form-control" type="number" placeholder="123" name="id_cliente" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -81,7 +81,7 @@
                         <label class="control-label" for="name-input-field">Nombre </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="text" name="nombre" required>
+                        <input class="form-control" type="text" placeholder="nombre" name="nombre" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -89,7 +89,7 @@
                         <label class="control-label" for="name-input-field">Apellido Paterno</label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="text" name="ap_pat" required>
+                        <input class="form-control" type="text" placeholder="primer apellido" name="ap_pat" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -97,46 +97,62 @@
                         <label class="control-label" for="name-input-field">Apellido Materno</label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="text" name="ap_mat" required>
+                        <input class="form-control" type="text" placeholder="segundo apellido" name="ap_mat" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-4 label-column">
-                        <label class="control-label" for="name-input-field">Teléfono </label>
+                        <label class="control-label" for="email-input-field">Teléfono </label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="number" name="tel" required>
+                        <input class="form-control" type="number" placeholder="7851920923" name="tel" required>
                     </div>
                 </div>
+                  <!--version 1.2 del sistema, registro de los datos del cliente-->
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="email-input-field">Tipo de suscripción </label>
+                    </div>
+                    <!--NAVA PONLE LA LISTA DESPLEGLABLE MEN-->
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="text" name="tipo_sus" required>
+                    </div>
+                </div>
+                    
+                <div class="form-group">
+                    <div class="col-sm-4 label-column">
+                        <label class="control-label" for="email-input-field">Cantidad</label>
+                    </div>
+                    <div class="col-sm-6 input-column">
+                        <input class="form-control" type="int" placeholder="tiempo que va pagar de suscripción" name="cantidad" required>
+                    </div>
+                </div> 
+
                 </div>
                 <div class="form-group">
                     <div class="col-sm-4 label-column">
-                        <label class="control-label" for="name-input-field">Nombre de Usuario </label>
+                        <label class="control-label" for="email-input-field">Fecha de inicio</label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="text" name="nom_usu" required>
+                        <input class="form-control" type="text" placeholder="dia/mes/año" name="fec_ini" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <div class="col-sm-4 label-column">
-                        <label class="control-label" for="pawssword-input-field">Contraseña </label>
+                        <label class="control-label" for="email-input-field">Fecha de vencimiento</label>
                     </div>
                     <div class="col-sm-6 input-column">
-                        <input class="form-control" type="password" name="contraseña" required>
+                        <input class="form-control" type="texto" placeholder="dia/mes/año" name="fec_vec" required>
                     </div>
-                </div>
-                <!--
-                <div class="form-group">
-                    <div class="col-sm-4 label-column">
-                        <label class="control-label" for="repeat-pawssword-input-field">Repita Contraseña</label>
-                    </div>
-                    <div class="col-sm-6 input-column">
-                        <input class="form-control" type="password" name="contraseña" required>
-                    </div>
-                </div>
-                -->
+                </div> 
+
                 <button class="btn btn-default submit-button" type="submit">Registrar </button>
-                <!--<button class="btn btn-default submit-button" type="button">Registrar </button> -->
+                </div>
+                </div>
+                
+        <!--<button class="btn btn-default submit-button" type="button">Registrar </button> -->
+                
             </form>
         </div>
     </div>
